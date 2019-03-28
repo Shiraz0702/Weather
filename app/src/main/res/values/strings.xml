@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="max">max :</string>
+    <string name="min">min :</string>
+    <string name="pressure_m_b">Pressure m/b</string>
+    <string name="humidity">Humidity</string>
+    <string name="clouds">Clouds</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="visibility_m">Visibility m :</string>
+    <string name="wind_m_s">Wind m/s :</string>
+    <string name="location">LOCATION</string>
+    <string name="city">City</string>
+</resources>

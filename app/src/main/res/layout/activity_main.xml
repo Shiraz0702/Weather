@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/earth"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/earth" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></android.support.v4.view.ViewPager>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="@dimen/btn_icon_dimens"
+        android:layout_height="@dimen/btn_icon_dimens"
+        android:layout_marginEnd="@dimen/btn_delete_margin_end"
+        android:background="@drawable/icon_option"
+        app:layout_constraintBottom_toBottomOf="@+id/indicator_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/indicator_page" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="@dimen/btn_icon_dimens"
+        android:layout_height="@dimen/btn_icon_dimens"
+        android:layout_marginStart="@dimen/btn_add_margin_start"
+        android:background="@drawable/icon_add"
+        app:layout_constraintBottom_toBottomOf="@+id/indicator_page"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/indicator_page" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator_page"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/circle_indicator_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_city" />
+
+    <TextView
+        android:id="@+id/text_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_start_end_top_bottom"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/text_city_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ashtarak" />
+
+</android.support.constraint.ConstraintLayout>
